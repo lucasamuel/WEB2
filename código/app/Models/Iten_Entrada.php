@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Iten_Entrada extends Model
 {
     use HasFactory;
+    protected $table = "itens_entrada"
+
+    protected $filable = [
+        'quantidade'
+    ];
 }

@@ -16,6 +16,7 @@ class CreateItensEntradaTable extends Migration
         Schema::create('itens_entrada', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->int('quantidade');
         });
     }
 
