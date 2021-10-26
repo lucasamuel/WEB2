@@ -16,6 +16,8 @@ class CreateItensVendaTable extends Migration
         Schema::create('itens_venda', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('descricao', 50);
+            $table->int('quantidade');
         });
     }
 

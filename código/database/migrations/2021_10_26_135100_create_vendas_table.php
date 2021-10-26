@@ -16,6 +16,7 @@ class CreateVendasTable extends Migration
         Schema::create('vendas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->float('valortotal');
         });
     }
 
